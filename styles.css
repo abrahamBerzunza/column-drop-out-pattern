@@ -1,0 +1,126 @@
+* {
+  font-family: 'Sanchez', serif;
+  background-color: #EFEEE8;
+  --accent-color: #CC0200;
+  --text-color: #BEBEBE;
+  --paragraph-color: #5E5E5E;
+  --line-color: #E0E0E0;
+}
+body {
+  padding-bottom: 80px;
+}
+
+.Title h1 {
+  color: var(--accent-color);
+  font-size: 48px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.Subtitle {
+  border-top: 4px solid var(--text-color);
+  border-bottom: 4px solid var(--text-color);
+}
+
+.Subtitle h2 {
+  color: var(--text-color);
+  font-weight: normal;
+  text-align: center;
+}
+
+.Blog {
+  margin-top: 72px;
+}
+
+.Blog h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.Blog a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 16px;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+}
+
+.Blog p {
+  margin: 0;
+  font-size: 18px;
+  color: var(--paragraph-color);
+}
+
+.Skills {
+  margin-top: 84px;
+}
+
+.Skills h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.Skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 16px;
+}
+
+.Skills-card {
+  background-color: white;
+  border-top: 4px solid var(--accent-color);
+  margin-bottom: 16px;
+}
+
+.Skills-title {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line-color);
+  padding: 12px 16px;
+}
+
+.Skills-title h5 {
+  background-color: white;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+}
+
+.Skills-title a {
+  color: var(--accent-color);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.Skills-card h6 {
+  background-color: white;
+  font-weight: normal;
+  font-size: 14px;
+  border-bottom: 1px solid var(--line-color);
+  margin: 0;
+  padding: 12px 16px;
+}
+
+.Skills-card ul {
+  background-color: white;
+  margin: 0;
+  padding: 12px 16px;
+}
+
+.Skills-card li {
+  background-color: white;
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+@media all and (min-width: 1200px) {
+  body {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
